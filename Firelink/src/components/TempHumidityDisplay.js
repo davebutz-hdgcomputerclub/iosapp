@@ -105,7 +105,7 @@ export default class TempHumidityDisplay extends Component{
 		            <Text>2</Text>
 		          </Badge>
 		          <View style={{width: "50%", height: "15%", alignItems: "center", backgroundColor: "#47DC3E"}}>
-		          	<Text>Hello Rony</Text>
+		          	<Text>Hello Rony!</Text>
 		          </View>
 	        </Content>
 	        <Footer>
