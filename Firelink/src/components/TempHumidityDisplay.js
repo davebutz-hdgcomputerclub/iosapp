@@ -113,7 +113,7 @@ export default class TempHumidityDisplay extends Component{
 
 	          <FooterTab>
 	            <Button full>
-	              <Text>Footer</Text>
+	              <Text>Footer Tab</Text>
 	            </Button>
 	          </FooterTab>
 
