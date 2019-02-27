@@ -1,7 +1,12 @@
 //TempHumidityDisplay.js
 import React, {Component} from 'react';
 import {Platform, StyleSheet, View} from 'react-native';
-import { Card, Badge, CardItem, Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text} from 'native-base';
+import { Card, Badge, CardItem, Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text, Accordian} from 'native-base';
+const dataArray = [
+	{ title: "Insert Room Name(lowest temperature)", content:"Lorem ipsum dolor sit"},
+	{ title: "Insert Room Name(highest temperature)", content:"Lorem ipsum dolor sit"},
+	{ title: "Insert Average Temperature(over last hour)", content:"Lorem ipsum dolor sit amet"},
+];
 
 
 export default class TempHumidityDisplay extends Component{
@@ -79,6 +84,16 @@ export default class TempHumidityDisplay extends Component{
 	          </Body>
 	          <Right />
 	        </Header>
+	        <Header />
+	        <Content padder>
+	        	<Accordian dataArray={dataArray} expanded={0}/>
+	        </Content>	
+	        <Content>
+	        	<Icon name='Highest Temperature' />
+	        	<Icon ios='ios-menu' android="md-menu" style={{fontSize: 20, color:'red'}} />
+	        	<Icon type="FontAwesome" name="flame" />
+	        </Content>
+
 	        <Content style={{width: "100%"}}>
 	          
 	            <View>

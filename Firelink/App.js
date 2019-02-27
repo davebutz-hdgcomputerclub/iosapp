@@ -11,6 +11,8 @@ import {Platform, StyleSheet, ActivityIndicator,View} from 'react-native';
 import Temp from './src/components/TempHumidityDisplay';
 import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text, Drawer, Accordion} from 'native-base';
 
+import ScienceBox from './src/components/box.js';
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
@@ -100,8 +102,15 @@ export default class App extends Component<Props> {
               <Icon name='menu' />
             </Button>
           </Left>
+
           <Body>
-            <Title><Text>ClimaEdu</Text></Title>
+            <Title>
+              
+            <Text>ClimaEdu
+
+               
+
+            </Text></Title>
           </Body>
           <Right />
         </Header>
@@ -113,6 +122,8 @@ export default class App extends Component<Props> {
                 <ActivityIndicator size="large" />
 
               </View>
+              <ScienceBox color={'#3FF0F3'} data={'coldRoomTemp'}/> 
+              <ScienceBox color={'#F33F3F'} data={'hotRoomTemp'}/>
               <Accordion dataArray={dataArray} icon="add" expandedIcon="remove" />
           </Content>
             </Content>
